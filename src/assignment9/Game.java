@@ -46,7 +46,6 @@ public class Game {
 		StdDraw.setPenColor(Color.black);
 		StdDraw.text(.50, .75, "Game Over");
 		StdDraw.show();
-		
 	}
 	
 	private int getKeypress() {

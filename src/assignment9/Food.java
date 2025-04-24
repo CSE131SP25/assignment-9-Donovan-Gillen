@@ -9,18 +9,51 @@ public class Food {
 	public static final double FOOD_SIZE = 0.02;
 	private double x, y;
 	
-	/**
-	 * Creates a new Food at a random location
-	 */
+	
+	
+	public Food(double x, double y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+
+	
+	
+	public double getX() {
+		return x;
+	}
+
+
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+
+
+	public double getY() {
+		return y;
+	}
+
+
+
+	public void setY(double y) {
+		this.y = y;
+	}
+
+
+
+	
 	public Food() {
-		//FIXME
+		setX(Math.random());
+		setY(Math.random());
 	}
 	
-	/**
-	 * Draws the Food
-	 */
+	
 	public void draw() {
-		//FIXME
+		StdDraw.setPenColor(ColorUtils.solidColor());
+		
+		StdDraw.filledCircle(getX(), getY(), FOOD_SIZE);
 	}
 	
 }
